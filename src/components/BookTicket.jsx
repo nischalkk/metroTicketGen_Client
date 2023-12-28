@@ -62,7 +62,7 @@ const BookTicket = () => {
         />
       </span>
 
-    <button className="rounded rounded-mb w-20 h-10 bg-gray-400 hover:bg-gray-500" onClick={()=>{axios.post("http://localhost:8080/tickets/book", {
+    <button className="rounded rounded-mb w-20 h-10 bg-gray-400 hover:bg-gray-500" onClick={()=>{axios.post("https://nexumetrotix.vercel.app/tickets/book", {
         startStation,
         endStation
 })
