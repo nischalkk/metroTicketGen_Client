@@ -10,7 +10,12 @@ import { useNavigate } from "react-router-dom";
     const navigate = useNavigate();
 
     useEffect(()=>{
-        axios.get("https://metrotickgensys-production.up.railway.app/tickets/")
+        axios.get(("https://metrotickgensys-production.up.railway.app/tickets/"),
+         mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin': true,
+        'Content-Type': 'application/json',
+      })
         .then((res)=>setTickets(res.data))
         .catch(err => {
             console.log(err.message)
