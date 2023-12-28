@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
     const navigate = useNavigate();
 
     useEffect(()=>{
-        axios.get("https://nexumetrotix.vercel.app/tickets/")
+        axios.get("https://metrotickgensys-production.up.railway.app/tickets/")
         .then((res)=>setTickets(res.data))
         .catch(err => {
             console.log(err.message)
@@ -81,7 +81,7 @@ import { useNavigate } from "react-router-dom";
     <button
       className="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       type="button"
-      onClick={()=>axios.post("https://nexumetrotix.vercel.app/tickets/enter/"+ticket.ticketId)
+      onClick={()=>axios.post("https://metrotickgensys-production.up.railway.app/tickets/enter/"+ticket.ticketId)
       .then((res)=>{toast(res.data);window.location='/tickets'})
       .catch(err => {
           console.log(err.message)
@@ -142,7 +142,7 @@ import { useNavigate } from "react-router-dom";
     <button
       className="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       type="button"
-      onClick={()=>axios.post("https://nexumetrotix.vercel.app/tickets/exit/"+ticket.ticketId)
+      onClick={()=>axios.post("https://metrotickgensys-production.up.railway.app/tickets/exit/"+ticket.ticketId)
       .then((res)=>{toast(res.data); navigate('/book')})
       .catch(err => {
           console.log(err.message)
