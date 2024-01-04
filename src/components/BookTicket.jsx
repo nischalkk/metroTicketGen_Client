@@ -65,11 +65,7 @@ const BookTicket = () => {
     <button className="rounded rounded-mb w-20 h-10 bg-gray-400 hover:bg-gray-500" onClick={()=>{axios.post("https://metrotickgensys-production.up.railway.app/tickets/book", {
         startStation,
         endStation,
-        mode: 'no-cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json',
-      }
+        mode: 'no-cors'
 })
 .then(response => {toast.success(response.data); navigate('/tickets')})
 .catch((error) => console.error(error))} }
