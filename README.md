@@ -28,9 +28,9 @@
 <h2 style="color: #669933;">Technologies Used</h2>
 
 <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px;">
-  <span style="background-color: #f7d7bd; padding: 5px; border-radius: 5px;">Framework: React with Vite</span>
-  <span style="background-color: #d2e3e6; padding: 5px; border-radius: 5px;">CSS: Tailwind CSS</span>
-  <span style="background-color: #e3e3d2; padding: 5px; border-radius: 5px;">State Management: Not implemented yet</span>
+  <span style="background-color: #f7d7bd; padding: 5px; border-radius: 5px;">Framework: React with Vite</span><br/>
+  <span style="background-color: #d2e3e6; padding: 5px; border-radius: 5px;">CSS: Tailwind CSS</span><br/>
+  <span style="background-color: #e3e3d2; padding: 5px; border-radius: 5px;">State Management: Not implemented yet</span><br/>
 </div>
 
 <!-- Backend Section with Colorful Callout -->
